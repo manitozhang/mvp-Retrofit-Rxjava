@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layout/activity_layout',
+                            'src/main/res/layout/fragment_layout',
+                            'src/main/res/layout/dialog_layout',
+                            'src/main/res/layout/item_layout',
+                            'src/main/res/layout/common_layout',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+}
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation rootProject.ext.junit
+    androidTestCompile rootProject.ext.junit
+    testCompile rootProject.ext.junit
+    compile rootProject.ext.appcompat
+    compile rootProject.ext.support
+    compile rootProject.ext.contraintLayout
+    //RecyclerView列表
+    compile rootProject.ext.recyclerView
+    //Metrail Design
+    compile rootProject.ext.design
+    //Glide图片加载
+    compile(rootProject.ext.glide) {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor rootProject.ext.glideCompiler
+    //EventBus
+    compile rootProject.ext.eventBus
+    //统计图,折线图,饼状图
+//    compile rootProject.ext.mpAndroidChart
+    compile files('libs/mpandroidchartlibrary-2-1-3.jar')
+    //选择器
+    compile rootProject.ext.pickerView
+    //权限
+    compile rootProject.ext.easyPermission
+    //文件下载
+    compile rootProject.ext.fileDownload
+    //pdfView
+    compile rootProject.ext.pdfView
+
+    //dagger
+    compile rootProject.ext.dagger
+    annotationProcessor rootProject.ext.daggerCompiler
+    //Rxlifecycle
+    compile rootProject.ext.rxlifecyxle
+    compile rootProject.ext.rxlifecyxleComponents
+
+    //ButterKnife
+    compile rootProject.ext.butterknife
+    annotationProcessor rootProject.ext.butterknifeCompiler
+}

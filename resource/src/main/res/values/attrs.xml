@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomToolbar">
+        <attr name="text_title" format="string" />
+        <attr name="back_type" format="integer" />
+        <attr name="bg_type" format="integer" />
+    </declare-styleable>
+
+</resources>

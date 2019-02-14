@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    provided fileTree(dir: 'libs', include: ['*.jar'])
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //Rxjava2
+    compile 'io.reactivex.rxjava2:rxjava:+'
+    compile 'io.reactivex.rxjava2:rxandroid:+'
+    //让retrofit支持Rxjava2
+    compile 'com.squareup.retrofit2:adapter-rxjava2:+'
+    compile rootProject.ext.okHttp
+    compile rootProject.ext.okHttpLogIntercept
+    annotationProcessor rootProject.ext.daggerCompiler
+    annotationProcessor rootProject.ext.butterknifeCompiler
+
+    api project(':resource')
+
+
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mvp</string>
+
+    <string name="net_error">网络好像有点问题,请稍后重试</string>
+    <string name="parse_error">解析异常</string>
+    <string name="time_out_error">网络超时,请检查你的ip和网络状态</string>
+    <string name="server_error">服务器请求错误</string>
+    <string name="json_error">数据解析异常</string>
+
+</resources>

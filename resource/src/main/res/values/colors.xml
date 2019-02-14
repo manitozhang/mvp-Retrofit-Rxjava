@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#007DFF</color>
+
+<!--常用颜色-->
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#007DFF</color>
+    <color name="black">#333333</color>
+    <color name="gray_666">#666666</color>
+    <color name="gray_999">#999999</color>
+    <color name="bg_gray">#F3F4F8</color>
+    <color name="cyan">#EDF4FE</color>
+    <color name="red">#FE453D</color>
+    <color name="orange">#FF9500</color>
+    <color name="green">#3cda38</color>
+    <color name="pink">#FFF9E6</color>
+
+    <!--蒙板透明色-->
+    <color name="mask">#80000000</color>
+    <color name="mask_80">#cc000000</color>
+    <color name="mask_50">#80000000</color>
+    <color name="mask_30">#4c000000</color>
+    <color name="mask_0">#00000000</color>
+
+
+</resources>
