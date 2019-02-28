@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.login">
-<uses-permission android:name="android.permission.INTERNET"/>
+
     <application>
         <!-- 不需要单独调试,则没有默认Activity页面 -->
         <activity android:name=".LoginActivity" />

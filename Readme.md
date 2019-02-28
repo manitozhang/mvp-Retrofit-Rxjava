@@ -21,7 +21,7 @@
 ## 依赖关系如下
 <img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/依赖关系.png"/>
 
-### 单独调试
+## 单独调试如下
 + **login可作为module单独调试**
 <img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/更改调试类型.png"/>
 
@@ -35,5 +35,12 @@
 如果作为library,则没有默认的启动activity**
 <img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/加载不同的资源文件.png"/>
 
++ **需要单独调试的清单文件,因为是需要单独调试,所以就作为一个app一样,所有该module里所需的权限都要配置,
+还有全局配置类,里面配置了包括ARouter,Dagger等相关,要有默认的启动Activity页面**
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/debug清淡文件.png"/>
+
++ **作为依赖包时加载的清单文件,因为他已经作为library包被主module所依赖,
+所有的配置类包括清单文件的权限都在主module类里面有即可**
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/noDebug清淡文件.png"/>
 
 **后续会一直更新,博主QQ : _1271396448_**
