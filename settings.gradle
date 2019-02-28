@@ -1,1 +1,1 @@
-include ':app', ':resource', ':rthttp'
+include ':app', ':resource', ':rthttp', ':login'

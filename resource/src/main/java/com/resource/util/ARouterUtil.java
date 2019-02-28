@@ -1,6 +1,7 @@
 package com.resource.util;
 
 
+import com.alibaba.android.arouter.launcher.ARouter;
 
 /**
  * Author: 张
@@ -12,8 +13,8 @@ package com.resource.util;
 
 public class ARouterUtil {
 
-//    public static void start(String path){
-//        ARouter.getInstance().build(path).navigation();
-//    }
+    public static void start(String path){
+        ARouter.getInstance().build(path).navigation();
+    }
 
 }

@@ -33,6 +33,10 @@ public abstract class BaseObserver<T> implements Observer<BaseResponse<T>> {
     private Context context;
     private AlertDialog dialog;
 
+    public BaseObserver() {
+        super();
+    }
+
     public  BaseObserver(Context context) {
         this.context = context;
         dialog = WaitLoadingDialogUtill.showLoadingDialog(context);
@@ -48,12 +52,6 @@ public abstract class BaseObserver<T> implements Observer<BaseResponse<T>> {
     public void onNext(BaseResponse<T> response) {
         if (response.getCode() == 10000) {//数据请求成功
             onSuccess(response);
-        } else if (response.getCode() == 10003) {//重新定向到登录页面
-            ToastUtil.showCenterToast("身份验证过期,请重新登录");
-//            Intent intent = new Intent(context, LoginBean.class);
-//            context.startActivity(intent);
-//            DestroyActivityUtil.destoryActivity("MainActivity");
-//            DestroyActivityUtil.destoryActivity("MainPageActivity");
         } else {
             ToastUtil.showCenterToast(response.getMsg());
         }

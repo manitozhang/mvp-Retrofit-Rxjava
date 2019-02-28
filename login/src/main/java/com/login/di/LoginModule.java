@@ -1,8 +1,8 @@
-package com.mvp.login.di;
+package com.login.di;
 
 
-import com.mvp.login.mvp.LoginContract;
-import com.mvp.login.mvp.LoginModel;
+import com.login.mvp.LoginContract;
+import com.login.mvp.LoginModel;
 import com.resource.base.di.scope.ActivityScope;
 
 import dagger.Module;

@@ -1,5 +1,9 @@
 package com.rthttp.bean;
 
+import com.rthttp.base.BaseResponse;
+
+import java.io.Serializable;
+
 /**
  * Author: 张
  * Email: 1271396448@qq.com

@@ -1,6 +1,6 @@
-package com.mvp.login.di;
+package com.login.di;
 
-import com.mvp.login.LoginActivity;
+import com.login.LoginActivity;
 import com.resource.base.di.component.AppComponent;
 import com.resource.base.di.scope.ActivityScope;
 

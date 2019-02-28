@@ -1,6 +1,6 @@
 package com.rthttp.intercept;
 
-import com.rthttp.common.Constant;
+import com.resource.common.Constant;
 import com.resource.util.LogUtil;
 import com.resource.util.SpUtil;
 
@@ -10,7 +10,6 @@ import okhttp3.HttpUrl;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
-import okhttp3.logging.HttpLoggingInterceptor;
 
 
 /**

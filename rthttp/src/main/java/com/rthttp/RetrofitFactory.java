@@ -2,15 +2,10 @@ package com.rthttp;
 
 
 import com.rthttp.api.ApiService;
-import com.rthttp.common.Constant;
 import com.rthttp.intercept.MyIntercept;
-import com.resource.util.SpUtil;
 
 import java.util.concurrent.TimeUnit;
 
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

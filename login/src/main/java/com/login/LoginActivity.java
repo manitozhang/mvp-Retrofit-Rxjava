@@ -1,32 +1,33 @@
-package com.mvp.login;
+package com.login;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.mvp.R;
-import com.mvp.login.di.DaggerLoginComponent;
-import com.mvp.login.di.LoginModule;
-import com.mvp.login.mvp.LoginContract;
-import com.mvp.login.mvp.LoginPresenter;
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.login.di.DaggerLoginComponent;
+import com.login.di.LoginModule;
+import com.login.mvp.LoginContract;
+import com.login.mvp.LoginPresenter;
 import com.resource.base.di.component.AppComponent;
 import com.resource.base.mvp.MvpBaseActivity;
+import com.resource.common.ARouterConstant;
 import com.resource.util.LogUtil;
 import com.resource.util.RegexUtil;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+@Route(path = ARouterConstant.ROUTE_LOGIN_LOGINACTIVITY)
 public class LoginActivity extends MvpBaseActivity<LoginPresenter>
         implements LoginContract.View {
 
-    @BindView(R.id.et_username)
+    @BindView(R2.id.et_username)
     EditText etUsername;
-    @BindView(R.id.et_password)
+    @BindView(R2.id.et_password)
     EditText etPassword;
-    @BindView(R.id.tv_login)
+    @BindView(R2.id.tv_login)
     TextView tvLogin;
 
     @Override
@@ -57,12 +58,11 @@ public class LoginActivity extends MvpBaseActivity<LoginPresenter>
     public void showMessage(String message) {
     }
 
-    @OnClick({R.id.tv_login})
+    @OnClick({R2.id.tv_login})
     public void onViewClicked(View v) {
-        switch (v.getId()) {
-            case R.id.tv_login://登录
-                mPresenter.login(RegexUtil.getEditStr(etUsername), RegexUtil.getEditStr(etPassword));
-                break;
+        int id = v.getId();
+        if (id == R.id.tv_login) {
+            mPresenter.login(RegexUtil.getEditStr(etUsername), RegexUtil.getEditStr(etPassword));
         }
     }
 }

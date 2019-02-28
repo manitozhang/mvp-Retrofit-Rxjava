@@ -1,4 +1,4 @@
-package com.rthttp.common;
+package com.resource.common;
 
 /**
  * Author: 张
@@ -37,29 +37,6 @@ public class Constant {
 
     //用户基本信息
     public final static String USER_TOKEN = "user_token";
-    public final static String USER_IS_LOGIN = "user_is_login";
-    public final static String USER_ID = "user_id";
-    public final static String USER_ACCOUNT_NAME = "user_account_name";
-    public final static String USER_CORP_NAME = "user_corp_name";
-    public final static String USER_AVATAR = "user_avatar";
-    public final static String USER_SEX = "user_sex";
-    public final static String USER_ID_NUMBER = "user_id_number";
-    public final static String USER_WORK_ID = "user_work_id";
-    public final static String USER_PHONE_NUMBER = "user_phone_number";
-    public final static String USER_ROLE_LIST = "user_role_list";
-    public final static String USER_ROLE_ID = "user_role_id";
-    public final static String USER_ROLE_NAME = "user_role_name";
-    public final static String USER_ORG_CODE = "user_org_code";
-    public final static String USER_ORG_NAME = "user_org_name";
-    public final static String USER_GRID_CODE = "user_grid_code";
-
-    //ARouter跳珠传值&Intent跳转传值
-    public final static String INTENT_CONTRACT_DATA = "intent_contract_data";
-    public final static String INTENT_CONTRACT_BASECODE = "intent_contract_base_code";
-    public final static String INTENT_CONTRACT_DATA_POSITION = "intent_contract_data_position";
-    public final static String INTENT_GRID_MANAGE_DATA_ID = "intent_grid_manage_data_id";
-    public final static String INTENT_GRID_MANAGE_DATA = "intent_grid_manage_data";
-    public final static String INTENT_GRID_MANAGE_REVIEW_PEOPLR = "intent_grid_manage_preview_people";
-    public final static String INTENT_CUSTOMER_CUSTOMER_ID = "intent_customer_customer_id";
+    public final static String USER_NAME = "user_name";
 
 }

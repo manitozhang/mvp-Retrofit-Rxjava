@@ -1,9 +1,5 @@
 package com.rthttp;
 
-import android.text.TextUtils;
-
-import com.resource.util.SpUtil;
-import com.rthttp.common.Constant;
 
 import java.util.HashMap;
 

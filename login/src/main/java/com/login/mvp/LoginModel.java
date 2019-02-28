@@ -1,4 +1,4 @@
-package com.mvp.login.mvp;
+package com.login.mvp;
 
 import com.resource.base.mvp.BaseModel;
 import com.rthttp.Mobile;
