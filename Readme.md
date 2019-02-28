@@ -1,6 +1,9 @@
 # MVP-Retrofit-Rxjava
 采用了组件化的模式
 
+## 依赖关系如下
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/yilaiguanxi.png"/>
+
 ### app 主module
 ### login 登录module
 ### rthttp 包含所有网络相关
