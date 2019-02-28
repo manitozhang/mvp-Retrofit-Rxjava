@@ -37,10 +37,10 @@
 
 + **需要单独调试的清单文件,因为是需要单独调试,所以就作为一个app一样,所有该module里所需的权限都要配置,
 还有全局配置类,里面配置了包括ARouter,Dagger等相关,要有默认的启动Activity页面**
-<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/debug清淡文件.png"/>
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/debug清单文件.png"/>
 
 + **作为依赖包时加载的清单文件,因为他已经作为library包被主module所依赖,
 所有的配置类包括清单文件的权限都在主module类里面有即可**
-<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/noDebug清淡文件.png"/>
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/noDebug清单文件.png"/>
 
 **后续会一直更新,博主QQ : _1271396448_**
