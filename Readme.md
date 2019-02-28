@@ -14,14 +14,12 @@
 + 需要更高更深层的理解
 
 
-
-## 依赖关系如下
-<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/依赖关系.png"/>
-
 ### app 主module
 ### login 登录module
 ### rthttp 包含所有网络相关
 ### resource 包含所有资源文件相关,工具类相关
+## 依赖关系如下
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/依赖关系.png"/>
 
 ### 单独调试
 + **login可作为module单独调试**
