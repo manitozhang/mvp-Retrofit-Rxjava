@@ -31,7 +31,7 @@ public class LoginPresenter extends BasePresenter<LoginContract.Model, LoginCont
 
     public void login(String username, String password){
         model.login(username, password)
-                .compose(RxJavaHelper.<BaseResponse<LoginBean>>observeOnMainThread())
+                .compose(RxJavaHelper.observeOnMainThread())
                 .subscribe(new BaseObserver<LoginBean>(getContext()) {
                     @Override
                     public void onSuccess(BaseResponse<LoginBean> response) {
