@@ -43,7 +43,6 @@ ext{
     rxlifecycleVersion = '1.0'
     rxlifecycleComponentsVersion = "1.0"
     fileDownloadVersion = "1.7.5"
-    pdfViewVersion = "2.8.0"
     arouterApiVersion = "1.4.1"
     arouterCompilerVersion = "1.2.1"
 
@@ -69,7 +68,6 @@ ext{
     rxlifecyxle = "com.trello:rxlifecycle:$rxlifecycleVersion"
     rxlifecyxleComponents = "com.trello:rxlifecycle-components:$rxlifecycleComponentsVersion"
     fileDownload = "com.liulishuo.filedownloader:library:$fileDownloadVersion"
-    pdfView = "com.github.barteksc:android-pdf-viewer:$pdfViewVersion"
 
     arouterApi = "com.alibaba:arouter-api:$arouterApiVersion"
     arouterCompiler = "com.alibaba:arouter-compiler:$arouterCompilerVersion"

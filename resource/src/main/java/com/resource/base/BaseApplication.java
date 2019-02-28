@@ -3,8 +3,6 @@ package com.resource.base;
 import android.app.Application;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.liulishuo.filedownloader.FileDownloader;
-import com.liulishuo.filedownloader.services.DownloadMgrInitialParams;
 import com.resource.BuildConfig;
 import com.resource.base.di.AppModule;
 import com.resource.base.di.component.AppComponent;
