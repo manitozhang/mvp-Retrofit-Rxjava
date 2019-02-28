@@ -8,3 +8,4 @@
 
 ### 单独调试
 login可作为module单独调试
+<img src="https://github.com/manitozhang/mvp-Retrofit-Rxjava/blob/master/img/20190228095049.png"/>
