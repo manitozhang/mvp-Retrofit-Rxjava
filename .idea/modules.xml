@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mvp.iml" filepath="$PROJECT_DIR$/Mvp.iml" />
+      <module fileurl="file://F:\android_code\mvp-Retrofit-Rxjava\Mvp.iml" filepath="F:\android_code\mvp-Retrofit-Rxjava\Mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp-Retrofit-Rxjava.iml" filepath="$PROJECT_DIR$/mvp-Retrofit-Rxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/resource/resource.iml" filepath="$PROJECT_DIR$/resource/resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/rthttp/rthttp.iml" filepath="$PROJECT_DIR$/rthttp/rthttp.iml" />
     </modules>
