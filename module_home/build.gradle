@@ -1,0 +1,62 @@
+//if (isHomeNeedDebug.toBoolean()) {//需要单独调试的话,则可以单独运行
+//    apply plugin: 'com.android.application'
+//} else {//不需要单独调试则作为一个library包被引入
+    apply plugin: 'com.android.library'
+//}
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //根据是否为单独调试,来加载不同的清单文件
+    sourceSets {
+        main {
+            if (isHomeNeedDebug.toBoolean()) {//需要单独调试的话
+                manifest.srcFile 'src/debug/AndroidManifest.xml'
+            } else {//不需要单独调试
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    //全部Module一起编译的时候剔除debug目录
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(':rthttp')
+
+    annotationProcessor rootProject.ext.arouterCompiler
+    annotationProcessor rootProject.ext.daggerCompiler
+    annotationProcessor rootProject.ext.butterknifeCompiler
+}

@@ -43,8 +43,8 @@ ext{
     rxlifecycleVersion = '1.0'
     rxlifecycleComponentsVersion = "1.0"
     fileDownloadVersion = "1.7.5"
-    arouterApiVersion = "1.4.1"
-    arouterCompilerVersion = "1.2.1"
+    arouterApiVersion = "1.2.1.1"
+    arouterCompilerVersion = "1.1.2.1"
 
     junit = "junit:junit:$junitVersion"
     appcompat = "com.android.support:appcompat-v7:$appcompatVersion"

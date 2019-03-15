@@ -1,1 +1,1 @@
-include ':app', ':resource', ':rthttp', ':login'
+include ':app', ':resource', ':rthttp', ':login', ':module_home'

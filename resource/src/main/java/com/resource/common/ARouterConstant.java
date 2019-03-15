@@ -10,9 +10,12 @@ package com.resource.common;
 
 public class ARouterConstant {
     //主模块
-    public final static String ROUTE_MAIN_MAINACTIVITY = "/main/activity/mainactivity";
+    public final static String ROUTE_MAIN_MAINACTIVITY = "/app/activity/mainactivity";
 
     //登录模块
     public final static String ROUTE_LOGIN_LOGINACTIVITY = "/login/activity/loginactivity";
     public final static String ROUTE_LOGIN_LOGINSUCCESSACTIVITY = "/login/activity/loginsuccessactivity";
+
+    //首页模块
+    public final static String ROUTE_HOME_MAINACTIVITY = "/home/activity/mainactivity";
 }

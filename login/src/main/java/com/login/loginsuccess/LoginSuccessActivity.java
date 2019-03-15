@@ -2,6 +2,7 @@ package com.login.loginsuccess;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -10,10 +11,12 @@ import com.login.R2;
 import com.resource.base.BaseActivity;
 import com.resource.common.ARouterConstant;
 import com.resource.common.Constant;
+import com.resource.util.ARouterUtil;
 import com.resource.weight.CustomToolbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 @Route(path = ARouterConstant.ROUTE_LOGIN_LOGINSUCCESSACTIVITY)
 public class LoginSuccessActivity extends BaseActivity {
@@ -22,6 +25,8 @@ public class LoginSuccessActivity extends BaseActivity {
     CustomToolbar toolBar;
     @BindView(R2.id.tv_user_name)
     TextView tvUserName;
+    @BindView(R2.id.btn_intent_home)
+    Button btnIntentHome;
 
     @Override
     public int initLayout() {
@@ -55,10 +60,11 @@ public class LoginSuccessActivity extends BaseActivity {
         });
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
+    @OnClick({R2.id.btn_intent_home})
+    public void onViewClicked(View view) {
+        int id = view.getId();
+        if(id == R.id.btn_intent_home){
+            ARouterUtil.start(ARouterConstant.ROUTE_HOME_MAINACTIVITY);
+        }
     }
 }

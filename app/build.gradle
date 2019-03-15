@@ -17,7 +17,7 @@ android {
 
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
@@ -37,10 +37,17 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //登录
     if (!isLoginNeedDebug.toBoolean()) {
         //如果不需要单独调试的话,则作为library引入到此module中
         api project(':login')
     }
+    //首页
+    if (!isHomeNeedDebug.toBoolean()){
+        //如果不需要单独调试的话,则作为library引入到此module中
+        api project(':module_home')
+    }
+
     api project(':rthttp')
 
     annotationProcessor rootProject.ext.arouterCompiler
