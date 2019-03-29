@@ -35,15 +35,19 @@ android {
 
 dependencies {
     provided fileTree(dir: 'libs', include: ['*.jar'])
-    //retrofit
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    //Rxjava2
-    compile 'io.reactivex.rxjava2:rxjava:+'
-    compile 'io.reactivex.rxjava2:rxandroid:+'
-    //让retrofit支持Rxjava2
-    compile 'com.squareup.retrofit2:adapter-rxjava2:+'
+    //retrofit2.0
+    compile rootProject.ext.retrofit2
+    //retrofit2.0的gson解析支持
+    compile rootProject.ext.retrofit2ConverterGson
+    //rxjava2.0
+    compile rootProject.ext.rxjava2
+    //rxandroid
+    compile rootProject.ext.rxjava2Rxandroid
+    //让retrofit2.0适配rxjava2.0
+    compile rootProject.ext.retrofit2AdapterRxjava2
+    //okhttp
     compile rootProject.ext.okHttp
+    //拦截器
     compile rootProject.ext.okHttpLogIntercept
 
     compile project(':resource')

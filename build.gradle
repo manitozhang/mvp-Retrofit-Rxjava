@@ -37,7 +37,6 @@ ext{
     pickerViewVersion = "3.2.6"
     butterknifeVersion = "8.8.1"
     easyPermissionVersion = "1.0.0"
-    okHttpVersion = "3.4.2"
     daggerVersion = '2.9'
     daggerCompilerVersion = '2.9'
     rxlifecycleVersion = '1.0'
@@ -45,6 +44,15 @@ ext{
     fileDownloadVersion = "1.7.5"
     arouterApiVersion = "1.2.1.1"
     arouterCompilerVersion = "1.1.2.1"
+
+    //rthttp 网络相关
+    retrofit2Version = '2.3.0'
+    retrofit2ConverterGsonVersion = '2.1.0'
+    rxjava2Version = '2.2.8'
+    rxjava2RxandroidVersion = '2.1.1'
+    retrofit2AdapterRxjava2Version = '2.5.0'
+    okHttpVersion = "3.4.2"
+
 
     junit = "junit:junit:$junitVersion"
     appcompat = "com.android.support:appcompat-v7:$appcompatVersion"
@@ -61,8 +69,6 @@ ext{
     butterknife = "com.jakewharton:butterknife:$butterknifeVersion"
     butterknifeCompiler = "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     easyPermission = "pub.devrel:easypermissions:$easyPermissionVersion"
-    okHttp = "com.squareup.okhttp3:okhttp:$okHttpVersion"
-    okHttpLogIntercept = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
     dagger =  "com.google.dagger:dagger:$daggerVersion"
     daggerCompiler =  "com.google.dagger:dagger-compiler:$daggerCompilerVersion"
     rxlifecyxle = "com.trello:rxlifecycle:$rxlifecycleVersion"
@@ -71,6 +77,15 @@ ext{
 
     arouterApi = "com.alibaba:arouter-api:$arouterApiVersion"
     arouterCompiler = "com.alibaba:arouter-compiler:$arouterCompilerVersion"
+
+    //rthttp 网络相关
+    retrofit2 = "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    retrofit2ConverterGson = "com.squareup.retrofit2:converter-gson:$retrofit2ConverterGsonVersion"
+    rxjava2 = "io.reactivex.rxjava2:rxjava:$rxjava2Version"
+    rxjava2Rxandroid = "io.reactivex.rxjava2:rxandroid:$rxjava2RxandroidVersion"
+    retrofit2AdapterRxjava2 = "com.squareup.retrofit2:adapter-rxjava2:$retrofit2AdapterRxjava2Version"
+    okHttp = "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    okHttpLogIntercept = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
 
 }
 
